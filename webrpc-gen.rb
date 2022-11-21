@@ -1,0 +1,1 @@
+# webrpc-gen.rb
