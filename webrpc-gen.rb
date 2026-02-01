@@ -5,21 +5,21 @@
 class WebrpcGen < Formula
   desc "generate source code for your target language from webrpc schema"
   homepage "https://github.com/webrpc/webrpc"
-  version "0.31.3"
+  version "0.32.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/webrpc/webrpc/releases/download/v0.31.3/webrpc-gen.darwin-amd64"
-      sha256 "94408821d4cbbbfa42220d7fd50d22fe2ea7bbb50a90dd6ba11a9a07431bfd55"
+      url "https://github.com/webrpc/webrpc/releases/download/v0.32.0/webrpc-gen.darwin-amd64"
+      sha256 "a773d7360b3a144912d3d6f2c8315b8ebaa0ec7e5e18430b14c217ecdd2e56d7"
 
       def install
         bin.install "webrpc-gen.darwin-amd64" => "webrpc-gen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/webrpc/webrpc/releases/download/v0.31.3/webrpc-gen.darwin-arm64"
-      sha256 "5581408b01660d9e748470d547a68fb0160f742cf9b845ae3618ad1be7eb04fb"
+      url "https://github.com/webrpc/webrpc/releases/download/v0.32.0/webrpc-gen.darwin-arm64"
+      sha256 "d962040f58ee93ea0e2400a472cd071535282ae885f27006fecdd70b458bffdb"
 
       def install
         bin.install "webrpc-gen.darwin-arm64" => "webrpc-gen"
@@ -29,15 +29,15 @@ class WebrpcGen < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/webrpc/webrpc/releases/download/v0.31.3/webrpc-gen.linux-amd64"
-      sha256 "3c51c522c0a7e56b46084a6b6b81a23549cba9f5cec202838d3a4ec5c2903d34"
+      url "https://github.com/webrpc/webrpc/releases/download/v0.32.0/webrpc-gen.linux-amd64"
+      sha256 "f275e38ee8c16ccd68dd94434097ae0b5607edb04a3282e4b9940ecfe38404ce"
       def install
         bin.install "webrpc-gen.linux-amd64" => "webrpc-gen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/webrpc/webrpc/releases/download/v0.31.3/webrpc-gen.linux-arm64"
-      sha256 "304caf654ed7c81c4ab8b5f7b702603dce79ffcdc0195ae603527277cf179bca"
+      url "https://github.com/webrpc/webrpc/releases/download/v0.32.0/webrpc-gen.linux-arm64"
+      sha256 "27ac7f854c5ad0a93ddfb06233a8b5cccbeab399bf2e6eb57a4f68ed242efb25"
       def install
         bin.install "webrpc-gen.linux-arm64" => "webrpc-gen"
       end
