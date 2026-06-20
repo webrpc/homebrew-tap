@@ -5,21 +5,21 @@
 class RidlLsp < Formula
   desc "Language server for RIDL schema files"
   homepage "https://github.com/webrpc/ridl-lsp"
-  version "1.3.0"
+  version "1.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/webrpc/ridl-lsp/releases/download/v1.3.0/ridl-lsp.darwin-amd64"
-      sha256 "1d69710f1bb9defa9aac1251aa1c24ead6e8836b81a89b2d173f9deaf0ec3d15"
+      url "https://github.com/webrpc/ridl-lsp/releases/download/v1.4.0/ridl-lsp.darwin-amd64"
+      sha256 "98f691a1cf01bacdb4955be9d20338d459c6641bf4691d464d507befc1d687e7"
 
       define_method(:install) do
         bin.install "ridl-lsp.darwin-amd64" => "ridl-lsp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/webrpc/ridl-lsp/releases/download/v1.3.0/ridl-lsp.darwin-arm64"
-      sha256 "811fe31bc818f340167a1f9ab791db9151e6fba39657d6a54466dc38283c8a60"
+      url "https://github.com/webrpc/ridl-lsp/releases/download/v1.4.0/ridl-lsp.darwin-arm64"
+      sha256 "4721dffd6b283e64719d9c4dea7fcb7cd46548c9be09e357dcb0a067d19127ca"
 
       define_method(:install) do
         bin.install "ridl-lsp.darwin-arm64" => "ridl-lsp"
@@ -29,15 +29,15 @@ class RidlLsp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/webrpc/ridl-lsp/releases/download/v1.3.0/ridl-lsp.linux-amd64"
-      sha256 "2dd3a70887e54d211d8e4af31f3da0a1816ecc5edf035fc4ee734eaeff1958a9"
+      url "https://github.com/webrpc/ridl-lsp/releases/download/v1.4.0/ridl-lsp.linux-amd64"
+      sha256 "e5d14324151209d2ee2a4171fbb457622cdbeb85b0fe7d555c6cb9becdbc8412"
       define_method(:install) do
         bin.install "ridl-lsp.linux-amd64" => "ridl-lsp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/webrpc/ridl-lsp/releases/download/v1.3.0/ridl-lsp.linux-arm64"
-      sha256 "8652f91925be5a8e4f87718b78a0fdc2cfa624cf978e777c9ccabe859a44055e"
+      url "https://github.com/webrpc/ridl-lsp/releases/download/v1.4.0/ridl-lsp.linux-arm64"
+      sha256 "148571a9ecf847b6280c51daaa53f2bac428b7c922d0aa26b7119c8ad6a0a855"
       define_method(:install) do
         bin.install "ridl-lsp.linux-arm64" => "ridl-lsp"
       end
