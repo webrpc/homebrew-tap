@@ -5,21 +5,21 @@
 class WebrpcTest < Formula
   desc "generate source code for your target language from webrpc schema"
   homepage "https://github.com/webrpc/webrpc"
-  version "0.48.0"
+  version "0.49.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/webrpc/webrpc/releases/download/v0.48.0/webrpc-test.darwin-amd64"
-      sha256 "43931d0912a9c8f66b1939a776c95bd36092a46324ddb92e9d6778fdbfb1701f"
+      url "https://github.com/webrpc/webrpc/releases/download/v0.49.0/webrpc-test.darwin-amd64"
+      sha256 "a779d577a96804b6e088f389ac6690266fae3e252f43a0a0897dd859e55d01cb"
 
       define_method(:install) do
         bin.install "webrpc-test.darwin-amd64" => "webrpc-test"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/webrpc/webrpc/releases/download/v0.48.0/webrpc-test.darwin-arm64"
-      sha256 "2dbb1e8f72c98e5a79d481459cecd2a264ee7a6b7937eb210dfb90afb8cb8e22"
+      url "https://github.com/webrpc/webrpc/releases/download/v0.49.0/webrpc-test.darwin-arm64"
+      sha256 "686337afd851a3417bf89ed4fcb0b338b1c676957011690806e9be455c29ce76"
 
       define_method(:install) do
         bin.install "webrpc-test.darwin-arm64" => "webrpc-test"
@@ -29,15 +29,15 @@ class WebrpcTest < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/webrpc/webrpc/releases/download/v0.48.0/webrpc-test.linux-amd64"
-      sha256 "68397fad59e446ef8b8cc920ea3d16474aa79c61f0ec9f0bc5acd6bdaf8779ba"
+      url "https://github.com/webrpc/webrpc/releases/download/v0.49.0/webrpc-test.linux-amd64"
+      sha256 "93ea26e14bfa6ea5865cb2f5027c8d7009f2e484f8824e8815619732cf26f836"
       define_method(:install) do
         bin.install "webrpc-test.linux-amd64" => "webrpc-test"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/webrpc/webrpc/releases/download/v0.48.0/webrpc-test.linux-arm64"
-      sha256 "0336c190b5bc80fec6d06a92d92c41c9871e10aa371905c035da93424bbfd328"
+      url "https://github.com/webrpc/webrpc/releases/download/v0.49.0/webrpc-test.linux-arm64"
+      sha256 "f92c0f63fa0bc9c662113655dbb92fa062287cab9cfe68a08eaa6a6fdfbc8d29"
       define_method(:install) do
         bin.install "webrpc-test.linux-arm64" => "webrpc-test"
       end
